@@ -1,0 +1,3 @@
+ENDPOINT
+
+https://66268ff8052332d553234b90.mockapi.io/api/post

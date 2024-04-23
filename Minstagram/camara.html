@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captura de Foto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <input
+        type="file"
+        accept="image/*"
+        capture="camera"
+        id="file-input"
+        style="display: none"
+      />
+      <img
+        src="images/placeholder.png"
+        id="photo-preview"
+        onclick="document.getElementById('file-input').click();"
+      />
+      <input type="text" placeholder="Añade un título..." id="photo-title" />
+      <div class="button-container">
+        <button id="confirm-photo">Publicar</button>
+        <button id="cancel-photo">Cancelar</button>
+      </div>
+    </main>
+    <script src="js/camera.js"></script>
+  </body>
+</html>
